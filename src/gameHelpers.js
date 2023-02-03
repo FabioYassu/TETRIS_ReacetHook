@@ -12,7 +12,7 @@ export const checkCollision = (player, stage, { x: moveX, y: moveY }) => {
       //1. Verifica a célula (cell) que esta atualmente o Tetramoni 
       if (player.tetromino[y][x] !== 0) {
         if (     
-          //2. Verifia se o nosso movimento está dentro da Height das áreas de jogo (y)
+          //2. Verifica se o nosso movimento está dentro da Height das áreas de jogo (y)
           // Não deve passar pela parte inferior da área de jogo
           !stage[y + player.pos.y + moveY] ||
           //3. Verifica se o nosso movimento está dentro da Width das áreas de jogo (x)          
